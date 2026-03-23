@@ -1,0 +1,26 @@
+MARKET:
+  symbol: MES
+  type: futures
+
+DATA:
+  timeframe: '5m'
+  lookback: 100
+
+FEATURES:
+  indicators:
+    - ema
+    - rsi
+    - macd
+
+LABELS:
+  forward_bars: 3
+  threshold: 0.01
+
+MODEL:
+  type: neural_network
+
+TRADING:
+  risk_management:
+    stop_loss: 50
+    take_profit: 100
+  order_size: 1
