@@ -3,7 +3,7 @@ MARKET:
   type: futures
 
 DATA:
-  timeframe: '5m'
+  timeframe: '500T'
   lookback: 500
 
 FEATURES:
@@ -16,8 +16,8 @@ FEATURES:
     - Awesome Oscillator
 
 LABELS:
-  forward_bars: 5
-  threshold: 0.01
+  forward_bars: 10
+  threshold: 0.05
 
 MODEL:
   type: neural_network
@@ -26,4 +26,4 @@ TRADING:
   risk_management:
     stop_loss: 200
     take_profit: 500
-  order_size: 1
+  order_size: 2
