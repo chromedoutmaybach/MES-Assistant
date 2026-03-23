@@ -4,16 +4,19 @@ MARKET:
 
 DATA:
   timeframe: '5m'
-  lookback: 100
+  lookback: 500
 
 FEATURES:
   indicators:
     - ema
     - rsi
     - macd
+    - VWMA
+    - Accelerator Oscillator
+    - Awesome Oscillator
 
 LABELS:
-  forward_bars: 3
+  forward_bars: 5
   threshold: 0.01
 
 MODEL:
@@ -21,6 +24,6 @@ MODEL:
 
 TRADING:
   risk_management:
-    stop_loss: 50
-    take_profit: 100
+    stop_loss: 200
+    take_profit: 500
   order_size: 1
